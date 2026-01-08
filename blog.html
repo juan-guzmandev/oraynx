@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de ORAYNX - Consejos, guías y recursos sobre desarrollo web, automatización y marketing digital para PYMEs en Bolivia.">
+    <meta name="keywords" content="blog desarrollo web, automatización Bolivia, marketing digital, tips PYMEs">
+    <title>Blog - ORAYNX | Recursos y Guías para tu Negocio Digital</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='25' r='8' fill='%2300C0D9'/%3E%3Ccircle cx='25' cy='75' r='8' fill='%2300C0D9'/%3E%3Ccircle cx='75' cy='75' r='8' fill='%2334D399'/%3E%3Cline x1='50' y1='25' x2='25' y2='75' stroke='%2300C0D9' stroke-width='3'/%3E%3Cline x1='25' y1='75' x2='75' y2='75' stroke='%2300C0D9' stroke-width='3'/%3E%3Cline x1='75' y1='75' x2='50' y2='25' stroke='%2334D399' stroke-width='3'/%3E%3C/svg%3E">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="25" y1="10" x2="10" y2="40" stroke="#00C0D9" stroke-width="3" opacity="0.6"/>
+                        <line x1="10" y1="40" x2="40" y2="40" stroke="#00C0D9" stroke-width="3" opacity="0.6"/>
+                        <line x1="40" y1="40" x2="25" y2="10" stroke="#34D399" stroke-width="3" opacity="0.6"/>
+                        <circle cx="25" cy="10" r="4" fill="#00C0D9"/>
+                        <circle cx="10" cy="40" r="4" fill="#00C0D9"/>
+                        <circle cx="40" cy="40" r="4" fill="#34D399"/>
+                        <circle cx="25" cy="30" r="3" fill="#34D399" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-ora">ORA</span><span class="logo-y">Y</span><span class="logo-nx">NX</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://wa.me/59177457906" class="btn-primary">Agenda Asesoría</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Blog & Recursos</h1>
+            <p>Consejos prácticos y guías para hacer crecer tu negocio digital</p>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories">
+                <button class="category-btn active" data-category="todos">📚 Todos</button>
+                <button class="category-btn" data-category="desarrollo-web">🌐 Desarrollo Web</button>
+                <button class="category-btn" data-category="automatizacion">🤖 Automatización</button>
+                <button class="category-btn" data-category="marketing">📈 Marketing Digital</button>
+                <button class="category-btn" data-category="casos-exito">⭐ Casos de Éxito</button>
+                <button class="category-btn" data-category="tips-pymes">💡 Tips para PYMEs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-article">
+                <div class="featured-image">🚀</div>
+                <div class="featured-content">
+                    <span class="featured-badge">⭐ Artículo Destacado</span>
+                    <h2>5 Señales de que tu Web Está Perdiendo Clientes</h2>
+                    <div class="featured-meta">
+                        <span>📅 7 de Enero, 2025</span>
+                        <span>⏱️ 8 min lectura</span>
+                    </div>
+                    <p class="featured-excerpt">
+                        ¿Sabías que el 88% de los usuarios no vuelven a un sitio web después de una mala experiencia? Descubre las señales de alerta que están haciendo que pierdas ventas y cómo solucionarlas.
+                    </p>
+                    <a href="#" class="btn-read-more">Leer artículo completo →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Últimos Artículos</h2>
+                <p>Mantente al día con las últimas tendencias y mejores prácticas</p>
+            </div>
+            
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <article class="blog-card" data-category="automatizacion">
+                    <div class="blog-card-image">🤖</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Automatización</span>
+                        <h3>Cómo Automatizar el Seguimiento de Leads sin CRM Caro</h3>
+                        <p class="blog-excerpt">
+                            Aprende a crear un sistema de seguimiento automático usando Google Sheets y n8n. Perfecto para PYMEs con presupuesto limitado.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 5 Ene 2025</span>
+                            <span class="blog-read-time">⏱️ 10 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card" data-category="desarrollo-web">
+                    <div class="blog-card-image">💰</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Desarrollo Web</span>
+                        <h3>Guía: Cuánto Cuesta una Página Web Profesional en Bolivia 2025</h3>
+                        <p class="blog-excerpt">
+                            Desglose completo de precios, qué esperar según tu presupuesto, y cómo evitar sorpresas desagradables en tu proyecto web.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 3 Ene 2025</span>
+                            <span class="blog-read-time">⏱️ 12 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card" data-category="marketing">
+                    <div class="blog-card-image">📊</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Marketing Digital</span>
+                        <h3>Landing Page vs Web Corporativa: ¿Cuál Necesitas?</h3>
+                        <p class="blog-excerpt">
+                            Descubre las diferencias clave y cuándo usar cada una para maximizar tu inversión en marketing digital.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 1 Ene 2025</span>
+                            <span class="blog-read-time">⏱️ 6 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-card" data-category="tips-pymes">
+                    <div class="blog-card-image">⚡</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Tips para PYMEs</span>
+                        <h3>7 Automatizaciones que Toda PYME Debería Tener</h3>
+                        <p class="blog-excerpt">
+                            Ahorra hasta 20 horas semanales con estas automatizaciones simples pero poderosas que cualquier negocio puede implementar.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 28 Dic 2024</span>
+                            <span class="blog-read-time">⏱️ 9 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-card" data-category="casos-exito">
+                    <div class="blog-card-image">🎯</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Caso de Éxito</span>
+                        <h3>Cómo [Cliente] Triplicó sus Consultas en 60 Días</h3>
+                        <p class="blog-excerpt">
+                            Historia real de un studio de diseño que pasó de perder el 60% de consultas a convertir el 85% con una landing page optimizada.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 25 Dic 2024</span>
+                            <span class="blog-read-time">⏱️ 11 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-card" data-category="automatizacion">
+                    <div class="blog-card-image">🔧</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Automatización</span>
+                        <h3>¿Qué es n8n y Por Qué tu Empresa lo Necesita?</h3>
+                        <p class="blog-excerpt">
+                            Introducción completa a la herramienta de automatización que está revolucionando la forma en que las PYMEs trabajan.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 22 Dic 2024</span>
+                            <span class="blog-read-time">⏱️ 7 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="blog-card" data-category="desarrollo-web">
+                    <div class="blog-card-image">✅</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Desarrollo Web</span>
+                        <h3>Checklist: 10 Elementos que tu Web Debe Tener en 2025</h3>
+                        <p class="blog-excerpt">
+                            Lista de verificación completa para asegurar que tu sitio web esté optimizado y listo para convertir visitantes en clientes.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 20 Dic 2024</span>
+                            <span class="blog-read-time">⏱️ 8 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="blog-card" data-category="marketing">
+                    <div class="blog-card-image">📧</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Marketing Digital</span>
+                        <h3>Email Marketing Automatizado: Setup Paso a Paso</h3>
+                        <p class="blog-excerpt">
+                            Guía práctica para configurar campañas de email marketing que funcionan mientras duermes. Incluye templates y ejemplos.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 18 Dic 2024</span>
+                            <span class="blog-read-time">⏱️ 15 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="blog-card" data-category="tips-pymes">
+                    <div class="blog-card-image">📱</div>
+                    <div class="blog-card-content">
+                        <span class="blog-category">Tips para PYMEs</span>
+                        <h3>WhatsApp Business API: Cómo Integrarlo con tu Web</h3>
+                        <p class="blog-excerpt">
+                            Aprende a conectar WhatsApp con tu sitio web para responder consultas automáticamente y nunca perder un cliente.
+                        </p>
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 15 Dic 2024</span>
+                            <span class="blog-read-time">⏱️ 10 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recursos Gratuitos</h2>
+                <p>Herramientas y materiales para impulsar tu negocio</p>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📋</div>
+                    <h3>Checklist Web 2025</h3>
+                    <p>Lista completa de elementos esenciales que tu sitio web debe tener para ser efectivo</p>
+                    <a href="#" class="resource-link">Descargar PDF →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">🎨</div>
+                    <h3>Templates de Email</h3>
+                    <p>10 plantillas profesionales de email listas para usar en tus campañas de marketing</p>
+                    <a href="#" class="resource-link">Obtener gratis →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <h3>Calculadora ROI</h3>
+                    <p>Calcula el retorno de inversión de tu proyecto web o campaña de marketing digital</p>
+                    <a href="#" class="resource-link">Usar calculadora →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">🚀</div>
+                    <h3>Guía de Automatización</h3>
+                    <p>Ebook gratuito: Cómo automatizar tu negocio sin ser experto en tecnología</p>
+                    <a href="#" class="resource-link">Descargar ebook →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>📬 Suscríbete al Newsletter</h2>
+            <p>Recibe consejos semanales, guías exclusivas y las últimas novedades del mundo digital directamente en tu email</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="tu@email.com" required>
+                <button type="submit" class="btn-newsletter">Suscribirme</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ORAYNX</h3>
+                <p>Crecimiento digital hecho simple para PYMEs en Bolivia.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul class="footer-links">
+                    <li><a href="servicios.html#web">Desarrollo Web</a></li>
+                    <li><a href="servicios.html#landing">Landing Pages</a></li>
+                    <li><a href="servicios.html#automatizaciones">Automatizaciones</a></li>
+                    <li><a href="servicios.html#mantenimiento">Mantenimiento</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="https://wa.me/59177457906">WhatsApp</a></li>
+                    <li><a href="mailto:contacto@oraynx.com">contacto@oraynx.com</a></li>
+                    <li>Cochabamba, Bolivia</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 ORAYNX. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/59177457906?text=Hola,%20tengo%20una%20consulta" class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Category filter
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const blogCards = document.querySelectorAll('.blog-card');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active state
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                const category = this.dataset.category;
+
+                // Filter articles
+                blogCards.forEach(card => {
+                    if (category === 'todos') {
+                        card.style.display = 'block';
+                    } else {
+                        if (card.dataset.category === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.querySelector('.newsletter-input').value;
+            alert('¡Gracias por suscribirte! Te enviaremos contenido exclusivo a ' + email);
+            this.reset();
+        });
+    </script>
+</body>
+</html>

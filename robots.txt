@@ -1,0 +1,70 @@
+# robots.txt para ORAYNX
+# Controla qué pueden rastrear los bots de búsqueda
+
+# Permitir a todos los bots buenos rastrear todo el sitio
+User-agent: *
+Allow: /
+
+# Bloquear bots maliciosos conocidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Permitir específicamente a Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Permitir a Bing
+User-agent: Bingbot
+Allow: /
+
+# Permitir bots de redes sociales para preview cards
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Directorios que NO queremos indexar (si los tuvieras)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
+# Disallow: /*.pdf$
+
+# Archivos específicos que no queremos indexar
+# Disallow: /gracias.html
+
+# Sitemap (actualiza con tu dominio cuando lo tengas)
+Sitemap: https://tudominio.com/sitemap.xml
+# Mientras tanto usa:
+# Sitemap: https://oraynx.netlify.app/sitemap.xml
+
+# Crawl-delay para bots agresivos (segundos entre requests)
+User-agent: *
+Crawl-delay: 1
+
+# Notas:
+# - Allow: / = Permitir rastrear todo
+# - Disallow: / = Bloquear todo
+# - Disallow: /carpeta/ = Bloquear una carpeta específica
+# - Actualiza la URL del Sitemap cuando tengas tu dominio propio

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casos de éxito y portafolio de proyectos de ORAYNX. Resultados reales de empresas bolivianas que transformaron su presencia digital.">
+    <meta name="keywords" content="portafolio web Bolivia, casos de éxito, proyectos digitales, automatizaciones">
+    <title>Portafolio - ORAYNX | Casos de Éxito</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='25' r='8' fill='%2300C0D9'/%3E%3Ccircle cx='25' cy='75' r='8' fill='%2300C0D9'/%3E%3Ccircle cx='75' cy='75' r='8' fill='%2334D399'/%3E%3Cline x1='50' y1='25' x2='25' y2='75' stroke='%2300C0D9' stroke-width='3'/%3E%3Cline x1='25' y1='75' x2='75' y2='75' stroke='%2300C0D9' stroke-width='3'/%3E%3Cline x1='75' y1='75' x2='50' y2='25' stroke='%2334D399' stroke-width='3'/%3E%3C/svg%3E">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="25" y1="10" x2="10" y2="40" stroke="#00C0D9" stroke-width="3" opacity="0.6"/>
+                        <line x1="10" y1="40" x2="40" y2="40" stroke="#00C0D9" stroke-width="3" opacity="0.6"/>
+                        <line x1="40" y1="40" x2="25" y2="10" stroke="#34D399" stroke-width="3" opacity="0.6"/>
+                        <circle cx="25" cy="10" r="4" fill="#00C0D9"/>
+                        <circle cx="10" cy="40" r="4" fill="#00C0D9"/>
+                        <circle cx="40" cy="40" r="4" fill="#34D399"/>
+                        <circle cx="25" cy="30" r="3" fill="#34D399" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-ora">ORA</span><span class="logo-y">Y</span><span class="logo-nx">NX</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html" class="active">Portafolio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://wa.me/59177457906?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" class="btn-primary">Agenda Asesoría</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nuestro Portafolio</h1>
+            <p>Resultados reales de empresas bolivianas que confiaron en nosotros</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="filter-group">
+            <h3>Filtrar por Servicio</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web Corporativa</button>
+                <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                <button class="filter-btn" data-filter="automation">Automatización</button>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h3>Filtrar por Industria</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="retail">Retail</button>
+                <button class="filter-btn" data-filter="education">Educación</button>
+                <button class="filter-btn" data-filter="health">Salud</button>
+                <button class="filter-btn" data-filter="services">Servicios</button>
+                <button class="filter-btn" data-filter="food">Gastronomía</button>
+                <button class="filter-btn" data-filter="design">Creativos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid" id="portfolioGrid">
+        <!-- Project 1 -->
+        <div class="project-card" data-service="landing automation" data-industry="design">
+            <div class="project-image">🎨</div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Landing Page</span>
+                    <span class="tag">Automatización</span>
+                </div>
+                <h3 class="project-title">Studio de Diseño</h3>
+                <p class="project-industry">Creativos y Diseño</p>
+                <div class="project-results">
+                    <div class="result-item">
+                        <span class="result-icon">↗️</span>
+                        <span>+180% consultas recibidas</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">⏱️</span>
+                        <span>Tiempo de respuesta: 4h → 2min</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">💰</span>
+                        <span>ROI 400% en primer mes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-service="web" data-industry="education">
+            <div class="project-image">🎓</div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Web Corporativa</span>
+                </div>
+                <h3 class="project-title">Centro de Capacitación</h3>
+                <p class="project-industry">Educación y Capacitación</p>
+                <div class="project-results">
+                    <div class="result-item">
+                        <span class="result-icon">↗️</span>
+                        <span>+150% visitas en 3 meses</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">📱</span>
+                        <span>70% tráfico móvil optimizado</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">✅</span>
+                        <span>Inscripciones online activadas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-service="automation" data-industry="retail">
+            <div class="project-image">🏪</div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Automatización</span>
+                </div>
+                <h3 class="project-title">Tienda de Ropa</h3>
+                <p class="project-industry">Retail y Comercio</p>
+                <div class="project-results">
+                    <div class="result-item">
+                        <span class="result-icon">⏰</span>
+                        <span>20 horas/semana ahorradas</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">📊</span>
+                        <span>Inventario sincronizado automáticamente</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">💬</span>
+                        <span>WhatsApp integrado con CRM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-service="landing" data-industry="health">
+            <div class="project-image">🏥</div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Landing Page</span>
+                </div>
+                <h3 class="project-title">Clínica Dental</h3>
+                <p class="project-industry">Salud y Bienestar</p>
+                <div class="project-results">
+                    <div class="result-item">
+                        <span class="result-icon">📅</span>
+                        <span>+250 citas agendadas online</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">↗️</span>
+                        <span>3x más conversión vs web anterior</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">⚡</span>
+                        <span>Confirmaciones automáticas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-service="web automation" data-industry="services">
+            <div class="project-image">💼</div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Web Corporativa</span>
+                    <span class="tag">Automatización</span>
+                </div>
+                <h3 class="project-title">Consultora Empresarial</h3>
+                <p class="project-industry">Servicios Profesionales</p>
+                <div class="project-results">
+                    <div class="result-item">
+                        <span class="result-icon">💰</span>
+                        <span>40% reducción en costos admin</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">📧</span>
+                        <span>Email marketing automatizado</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">📊</span>
+                        <span>Reportes automáticos semanales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-service="landing" data-industry="food">
+            <div class="project-image">🍽️</div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Landing Page</span>
+                </div>
+                <h3 class="project-title">Restaurante Gourmet</h3>
+                <p class="project-industry">Gastronomía</p>
+                <div class="project-results">
+                    <div class="result-item">
+                        <span class="result-icon">📱</span>
+                        <span>Pedidos online integrados</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">↗️</span>
+                        <span>+85% en reservaciones</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-icon">⭐</span>
+                        <span>Sistema de reseñas implementado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Case Study -->
+    <section class="featured-case">
+        <div class="case-study">
+            <div class="case-study-header">
+                <h2>📖 Caso de Estudio Destacado</h2>
+                <p>Studio de Diseño - De perder el 60% de consultas a triplicar clientes</p>
+            </div>
+
+            <div class="case-sections">
+                <!-- Challenge -->
+                <div class="case-section">
+                    <h3>
+                        <span class="case-section-icon">🎯</span>
+                        El Desafío
+                    </h3>
+                    <p>Un reconocido studio de diseño en La Paz tenía una web obsoleta con formularios que no funcionaban correctamente. Perdían aproximadamente el 60% de las consultas porque los clientes no recibían respuesta o el mensaje nunca llegaba. El seguimiento era manual y tardaban hasta 4 horas en responder, momento en el cual el cliente potencial ya había contactado a la competencia.</p>
+                </div>
+
+                <!-- Solution -->
+                <div class="case-section">
+                    <h3>
+                        <span class="case-section-icon">💡</span>
+                        La Solución
+                    </h3>
+                    <p>Implementamos una landing page optimizada específicamente para conversión, con formularios inteligentes que garantizan la entrega de cada consulta. Desarrollamos un sistema de automatización con n8n que envía respuestas instantáneas personalizadas, registra cada lead en un CRM simple en Google Sheets, y notifica al equipo vía WhatsApp y email. Todo el proceso ahora es automático y confiable.</p>
+                </div>
+
+                <!-- Technologies -->
+                <div class="case-section">
+                    <h3>
+                        <span class="case-section-icon">⚙️</span>
+                        Tecnologías Utilizadas
+                    </h3>
+                    <div class="tech-list">
+                        <span class="tech-item">HTML/CSS Responsive</span>
+                        <span class="tech-item">n8n Automation</span>
+                        <span class="tech-item">WhatsApp Business API</span>
+                        <span class="tech-item">Google Sheets CRM</span>
+                        <span class="tech-item">Email Marketing</span>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="case-section">
+                    <h3>
+                        <span class="case-section-icon">📈</span>
+                        Resultados Medibles
+                    </h3>
+                    <div class="results-grid">
+                        <div class="result-stat">
+                            <div class="result-stat-value">+180%</div>
+                            <div class="result-stat-label">Consultas recibidas</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="result-stat-value">2 min</div>
+                            <div class="result-stat-label">Tiempo de respuesta</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="result-stat-value">400%</div>
+                            <div class="result-stat-label">ROI primer mes</div>
+                        </div>
+                        <div class="result-stat">
+                            <div class="result-stat-value">0%</div>
+                            <div class="result-stat-label">Consultas perdidas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial -->
+                <div class="case-section">
+                    <h3>
+                        <span class="case-section-icon">💬</span>
+                        Testimonio del Cliente
+                    </h3>
+                    <div class="testimonial">
+                        "Antes perdíamos clientes porque no respondíamos a tiempo o directamente no recibíamos las consultas. Ahora todo es automático y profesional. En el primer mes cerramos 3 proyectos nuevos que cubrieron la inversión 4 veces. Lo mejor es que ya no tengo que estar pendiente 24/7, el sistema trabaja por mí."
+                        <div class="testimonial-author">— María R., Directora Creativa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="industries">
+        <h2>Industrias que Atendemos</h2>
+        <div class="industries-grid">
+            <div class="industry-card">
+                <div class="industry-icon">🏪</div>
+                <h3>Retail y Comercio</h3>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon">🎓</div>
+                <h3>Educación y Capacitación</h3>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon">🏥</div>
+                <h3>Salud y Bienestar</h3>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon">💼</div>
+                <h3>Servicios Profesionales</h3>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon">🍽️</div>
+                <h3>Gastronomía</h3>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon">🏗️</div>
+                <h3>Construcción</h3>
+            </div>
+            <div class="industry-card">
+                <div class="industry-icon">🎨</div>
+                <h3>Creativos y Diseño</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2>¿Listo para ser nuestro próximo caso de éxito?</h2>
+        <p>Agenda una asesoría gratuita y descubre cómo podemos transformar tu negocio</p>
+        <a href="https://wa.me/59177457906" class="cta-button">Agenda tu Asesoría Gratuita</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ORAYNX</h3>
+                <p>Crecimiento digital hecho simple para PYMEs en Bolivia.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul class="footer-links">
+                    <li><a href="servicios.html#web">Desarrollo Web</a></li>
+                    <li><a href="servicios.html#landing">Landing Pages</a></li>
+                    <li><a href="servicios.html#automatizaciones">Automatizaciones</a></li>
+                    <li><a href="servicios.html#mantenimiento">Mantenimiento</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="https://wa.me/59177457906">WhatsApp</a></li>
+                    <li><a href="mailto:contacto@oraynx.com">contacto@oraynx.com</a></li>
+                    <li>Cochabamba, Bolivia</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 ORAYNX. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/59177457906" class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filterType = this.parentElement.parentElement.querySelector('h3').textContent;
+                const filterValue = this.dataset.filter;
+
+                // Update active state
+                this.parentElement.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                // Filter projects
+                projectCards.forEach(card => {
+                    if (filterValue === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const cardServices = card.dataset.service || '';
+                        const cardIndustry = card.dataset.industry || '';
+                        
+                        if (filterType.includes('Servicio')) {
+                            if (cardServices.includes(filterValue)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        } else if (filterType.includes('Industria')) {
+                            if (cardIndustry === filterValue) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

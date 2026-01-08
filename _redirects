@@ -1,0 +1,48 @@
+# Redirecciones de Netlify para ORAYNX
+
+# Redireccionar variantes de páginas principales
+/home               /                   301
+/inicio             /                   301
+/index              /                   301
+/index.html         /                   301
+
+# Redirecciones de URLs antiguas o comunes
+/service            /servicios.html     301
+/services           /servicios.html     301
+/portfolio          /portafolio.html    301
+/about              /nosotros.html      301
+/about-us           /nosotros.html      301
+/quienes-somos      /nosotros.html      301
+/contact            /contacto.html      301
+/contactanos        /contacto.html      301
+/price              /precios.html       301
+/pricing            /precios.html       301
+/thanks             /gracias.html       301
+/thank-you          /gracias.html       301
+
+# Redirecciones de secciones dentro de páginas
+/web                /servicios.html#web                     301
+/landing            /servicios.html#landing                 301
+/automatizaciones   /servicios.html#automatizaciones        301
+/mantenimiento      /servicios.html#mantenimiento           301
+
+# URLs cortas para compartir en redes sociales
+/wa                 https://wa.me/59100000000?text=Hola,%20quiero%20información%20sobre%20ORAYNX     301
+/whatsapp           https://wa.me/59100000000?text=Hola,%20quiero%20información%20sobre%20ORAYNX     301
+/asesoria           https://wa.me/59100000000?text=Hola,%20quiero%20una%20asesoría%20gratuita        301
+/cotizacion         /contacto.html                          301
+/cotizar            /contacto.html                          301
+
+# Redirecciones para servicios específicos con query params
+/servicio-web       /servicios.html#web                     301
+/servicio-landing   /servicios.html#landing                 301
+/servicio-auto      /servicios.html#automatizaciones        301
+
+# Página 404 - Debe ir al final
+/*                  /index.html                             404
+
+# Notas de uso:
+# Formato: [from] [to] [status-code]
+# 301 = Redirección permanente
+# 302 = Redirección temporal
+# 404 = Página no encontrada

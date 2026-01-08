@@ -1,0 +1,83 @@
+# Configuración de Netlify para ORAYNX
+
+[build]
+  # Directorio de publicación (raíz del proyecto)
+  publish = "."
+  
+  # No necesitamos comando de build (HTML estático)
+  command = ""
+
+# Configuración de headers para seguridad y rendimiento
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Seguridad
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Performance - Cache de assets estáticos
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    # HTML sin cache (para actualizaciones rápidas)
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    # Imágenes con cache de 1 año
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirecciones para páginas antiguas o errores comunes
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index"
+  to = "/"
+  status = 301
+  force = true
+
+# Página 404 personalizada
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+# Formularios de Netlify
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Configuración del dominio personalizado (cuando lo tengas)
+# [[redirects]]
+#   from = "https://oraynx.netlify.app/*"
+#   to = "https://oraynx.com/:splat"
+#   status = 301
+#   force = true
+
+# Prevenir indexación del dominio Netlify cuando tengas dominio propio
+# [[headers]]
+#   for = "/*"
+#   [headers.values]
+#     X-Robots-Tag = "noindex"

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Precios transparentes para servicios de desarrollo web y automatizaciones. Sin costos ocultos, planes adaptados para PYMEs bolivianas.">
+    <meta name="keywords" content="precios web Bolivia, desarrollo web costo, automatización precios, landing page precio">
+    <title>Precios - ORAYNX | Planes Transparentes para tu Negocio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='25' r='8' fill='%2300C0D9'/%3E%3Ccircle cx='25' cy='75' r='8' fill='%2300C0D9'/%3E%3Ccircle cx='75' cy='75' r='8' fill='%2334D399'/%3E%3Cline x1='50' y1='25' x2='25' y2='75' stroke='%2300C0D9' stroke-width='3'/%3E%3Cline x1='25' y1='75' x2='75' y2='75' stroke='%2300C0D9' stroke-width='3'/%3E%3Cline x1='75' y1='75' x2='50' y2='25' stroke='%2334D399' stroke-width='3'/%3E%3C/svg%3E">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="25" y1="10" x2="10" y2="40" stroke="#00C0D9" stroke-width="3" opacity="0.6"/>
+                        <line x1="10" y1="40" x2="40" y2="40" stroke="#00C0D9" stroke-width="3" opacity="0.6"/>
+                        <line x1="40" y1="40" x2="25" y2="10" stroke="#34D399" stroke-width="3" opacity="0.6"/>
+                        <circle cx="25" cy="10" r="4" fill="#00C0D9"/>
+                        <circle cx="10" cy="40" r="4" fill="#00C0D9"/>
+                        <circle cx="40" cy="40" r="4" fill="#34D399"/>
+                        <circle cx="25" cy="30" r="3" fill="#34D399" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-ora">ORA</span><span class="logo-y">Y</span><span class="logo-nx">NX</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="precios.html" class="active">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="https://wa.me/59177457906?text=Hola,%20quiero%20información%20sobre%20sus%20servicios" class="btn-primary">Agenda Asesoría</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Precios Transparentes</h1>
+            <p>Sin sorpresas, sin costos ocultos. Elige el plan perfecto para tu negocio</p>
+            <div class="hero-features">
+                <div class="hero-feature">✓ Sin contratos largos</div>
+                <div class="hero-feature">✓ Garantía de satisfacción</div>
+                <div class="hero-feature">✓ Soporte incluido</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle Section -->
+    <section class="toggle-section">
+        <div class="billing-toggle">
+            <button class="toggle-btn active" data-billing="one-time">Pago Único</button>
+            <button class="toggle-btn" data-billing="monthly">Mensual <span class="savings-badge">Ahorra 20%</span></button>
+        </div>
+    </section>
+
+    <!-- Pricing Cards - One Time -->
+    <section class="pricing-section" id="one-time-pricing">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Plan Básico -->
+                <div class="pricing-card" data-plan="basico">
+                    <div class="plan-icon">🚀</div>
+                    <h3 class="plan-name">Plan Básico</h3>
+                    <p class="plan-description">Perfecto para empezar tu presencia digital profesional</p>
+                    
+                    <div class="plan-price">
+                        <span class="price-amount">1.500</span>
+                        <span class="price-currency">$us</span>
+                        <span class="price-period">pago único</span>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Sitio web responsivo</li>
+                        <li>Hasta 5 páginas</li>
+                        <li>Formulario de contacto</li>
+                        <li>Integración con WhatsApp</li>
+                        <li>Soporte 30 días</li>
+                        <li>Hosting 1 año</li>
+                        <li>SSL Certificate</li>
+                    </ul>
+                    
+                    <a href="contacto.html?plan=basico" class="btn-plan">Comenzar Ahora</a>
+                </div>
+
+                <!-- Plan Profesional -->
+                <div class="pricing-card featured" data-plan="profesional">
+                    <div class="popular-badge">Más Popular</div>
+                    <div class="plan-icon">⭐</div>
+                    <h3 class="plan-name">Plan Profesional</h3>
+                    <p class="plan-description">Ideal para empresas en crecimiento que necesitan más funcionalidades</p>
+                    
+                    <div class="plan-price">
+                        <span class="price-amount">3.500</span>
+                        <span class="price-currency">$us</span>
+                        <span class="price-period">pago único</span>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Todo lo del plan básico</li>
+                        <li>Hasta 15 páginas</li>
+                        <li>Galería de imágenes</li>
+                        <li>Blog integrado</li>
+                        <li>SEO básico incluido</li>
+                        <li>Soporte 90 días</li>
+                        <li>Hosting 2 años</li>
+                        <li>SSL Certificate</li>
+                        <li>Analytics básico</li>
+                    </ul>
+                    
+                    <a href="contacto.html?plan=profesional" class="btn-plan">Comenzar Ahora</a>
+                </div>
+
+                <!-- Plan Empresarial -->
+                <div class="pricing-card" data-plan="empresarial">
+                    <div class="plan-icon">🏢</div>
+                    <h3 class="plan-name">Plan Empresarial</h3>
+                    <p class="plan-description">Solución completa para empresas establecidas con alto volumen de tráfico</p>
+                    
+                    <div class="plan-price">
+                        <span class="price-amount">6.000</span>
+                        <span class="price-currency">$us</span>
+                        <span class="price-period">pago único</span>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Todo lo del plan profesional</li>
+                        <li>Páginas ilimitadas</li>
+                        <li>E-commerce básico</li>
+                        <li>Sistema de reservas</li>
+                        <li>SEO avanzado</li>
+                        <li>Soporte 180 días</li>
+                        <li>Hosting 3 años</li>
+                        <li>SSL Certificate</li>
+                        <li>Analytics completo</li>
+                        <li>Backup mensual</li>
+                    </ul>
+                    
+                    <a href="contacto.html?plan=empresarial" class="btn-plan">Comenzar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards - Monthly -->
+    <section class="pricing-section" id="monthly-pricing" style="display: none;">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Plan Básico Mensual -->
+                <div class="pricing-card" data-plan="basico-mensual">
+                    <div class="plan-icon">🚀</div>
+                    <h3 class="plan-name">Plan Básico</h3>
+                    <p class="plan-description">Perfecto para empezar tu presencia digital profesional</p>
+                    
+                    <div class="plan-price">
+                        <span class="price-amount">150</span>
+                        <span class="price-currency">$us</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Sitio web responsivo</li>
+                        <li>Hasta 5 páginas</li>
+                        <li>Formulario de contacto</li>
+                        <li>Integración con WhatsApp</li>
+                        <li>Soporte continuo</li>
+                        <li>Hosting incluido</li>
+                        <li>SSL Certificate</li>
+                    </ul>
+                    
+                    <a href="contacto.html?plan=basico-mensual" class="btn-plan">Comenzar Ahora</a>
+                </div>
+
+                <!-- Plan Profesional Mensual -->
+                <div class="pricing-card featured" data-plan="profesional-mensual">
+                    <div class="popular-badge">Más Popular</div>
+                    <div class="plan-icon">⭐</div>
+                    <h3 class="plan-name">Plan Profesional</h3>
+                    <p class="plan-description">Ideal para empresas en crecimiento que necesitan más funcionalidades</p>
+                    
+                    <div class="plan-price">
+                        <span class="price-amount">280</span>
+                        <span class="price-currency">$us</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Todo lo del plan básico</li>
+                        <li>Hasta 15 páginas</li>
+                        <li>Galería de imágenes</li>
+                        <li>Blog integrado</li>
+                        <li>SEO básico incluido</li>
+                        <li>Soporte prioritario</li>
+                        <li>Hosting incluido</li>
+                        <li>SSL Certificate</li>
+                        <li>Analytics básico</li>
+                    </ul>
+                    
+                    <a href="contacto.html?plan=profesional-mensual" class="btn-plan">Comenzar Ahora</a>
+                </div>
+
+                <!-- Plan Empresarial Mensual -->
+                <div class="pricing-card" data-plan="empresarial-mensual">
+                    <div class="plan-icon">🏢</div>
+                    <h3 class="plan-name">Plan Empresarial</h3>
+                    <p class="plan-description">Solución completa para empresas establecidas con alto volumen de tráfico</p>
+                    
+                    <div class="plan-price">
+                        <span class="price-amount">480</span>
+                        <span class="price-currency">$us</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    
+                    <ul class="plan-features">
+                        <li>Todo lo del plan profesional</li>
+                        <li>Páginas ilimitadas</li>
+                        <li>E-commerce básico</li>
+                        <li>Sistema de reservas</li>
+                        <li>SEO avanzado</li>
+                        <li>Soporte prioritario</li>
+                        <li>Hosting incluido</li>
+                        <li>SSL Certificate</li>
+                        <li>Analytics completo</li>
+                        <li>Backup mensual</li>
+                    </ul>
+                    
+                    <a href="contacto.html?plan=empresarial-mensual" class="btn-plan">Comenzar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combo Packages -->
+    <section class="combos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Paquetes Combo</h2>
+                <p>Ahorra hasta 30% combinando nuestros servicios</p>
+            </div>
+            
+            <div class="combos-grid">
+                <!-- Combo Starter -->
+                <div class="combo-card">
+                    <div class="combo-badge">Más Vendido</div>
+                    <h3 class="combo-name">Combo Starter</h3>
+                    <p class="combo-description">Perfecto para nuevos negocios que necesitan presencia web y automatización básica</p>
+                    
+                    <div class="combo-includes">
+                        <h4>✓ Incluye:</h4>
+                        <li>Web Profesional (1 pago)</li>
+                        <li>Automatización de formularios</li>
+                        <li>Integración con CRM básico</li>
+                        <li>Configuración inicial</li>
+                        <li>Capacitación de 2 horas</li>
+                    </div>
+                    
+                    <div class="combo-pricing">
+                        <span class="precio-original">$4.000</span>
+                        <span class="precio-combo">$2.800</span>
+                        <span class="ahorro">Ahorra 30%</span>
+                    </div>
+                    
+                    <a href="contacto.html?combo=starter" class="btn-plan">Contratar Combo</a>
+                </div>
+
+                <!-- Combo Growth -->
+                <div class="combo-card destacado">
+                    <div class="combo-badge">Recomendado</div>
+                    <h3 class="combo-name">Combo Growth</h3>
+                    <p class="combo-description">Para empresas en crecimiento que necesitan automatización avanzada y marketing digital</p>
+                    
+                    <div class="combo-includes">
+                        <h4>✓ Incluye:</h4>
+                        <li>Web Empresarial (1 pago)</li>
+                        <li>Automatización completa</li>
+                        <li>Integración con CRM avanzado</li>
+                        <li>Email marketing básico</li>
+                        <li>Configuración completa</li>
+                        <li>Capacitación de 4 horas</li>
+                        <li>Soporte 30 días</li>
+                    </div>
+                    
+                    <div class="combo-pricing">
+                        <span class="precio-original">$7.500</span>
+                        <span class="precio-combo">$5.500</span>
+                        <span class="ahorro">Ahorra 27%</span>
+                    </div>
+                    
+                    <a href="contacto.html?combo=growth" class="btn-plan">Contratar Combo</a>
+                </div>
+
+                <!-- Combo Scale -->
+                <div class="combo-card">
+                    <h3 class="combo-name">Combo Scale</h3>
+                    <p class="combo-description">Para empresas establecidas que necesitan solución completa y personalizada</p>
+                    
+                    <div class="combo-includes">
+                        <h4>✓ Incluye:</h4>
+                        <li>Web Empresarial (1 pago)</li>
+                        <li>Automatización enterprise</li>
+                        <li>Integración con CRM enterprise</li>
+                        <li>Email marketing avanzado</li>
+                        <li>Sistema de reservas</li>
+                        <li>Configuración personalizada</li>
+                        <li>Capacitación de 8 horas</li>
+                        <li>Soporte 60 días</li>
+                    </div>
+                    
+                    <div class="combo-pricing">
+                        <span class="precio-original">$12.000</span>
+                        <span class="precio-combo">$9.000</span>
+                        <span class="ahorro">Ahorra 25%</span>
+                    </div>
+                    
+                    <a href="contacto.html?combo=scale" class="btn-plan">Consultar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comparación de Servicios</h2>
+                <p>Elige la solución perfecta para tu negocio</p>
+            </div>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Básico</th>
+                            <th>Profesional</th>
+                            <th>Empresarial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Páginas</td>
+                            <td>Hasta 5</td>
+                            <td>Hasta 15</td>
+                            <td>Ilimitadas</td>
+                        </tr>
+                        <tr>
+                            <td>Galería</td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Blog</td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>E-commerce</td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>SEO Básico</td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>SEO Avanzado</td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Analytics</td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Backup</td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Soporte</td>
+                            <td>30 días</td>
+                            <td>90 días</td>
+                            <td>180 días</td>
+                        </tr>
+                        <tr>
+                            <td>Hosting</td>
+                            <td>1 año</td>
+                            <td>2 años</td>
+                            <td>3 años</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo cambiar de plan después?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, puedes actualizar tu plan en cualquier momento. La diferencia se ajustará en el siguiente ciclo de facturación. Para planes mensuales, el cambio se aplica al siguiente mes.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué métodos de pago aceptan?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Aceptamos transferencias bancarias, tarjetas de crédito/débito, y pagos mediante PayPal. Para planes anuales, ofrecemos descuentos por pago anticipado.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿El hosting está incluido?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, el hosting está incluido en todos los planes durante el período especificado. Después de ese período, puedes renovarlo a un costo preferencial.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Ofrecen garantía?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, ofrecemos garantía de satisfacción de 30 días. Si no estás satisfecho, te devolvemos el dinero sin preguntas.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo cancelar mi suscripción?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Para planes mensuales, puedes cancelar en cualquier momento sin penalidades. Para planes anuales, puedes cancelar con 30 días de anticipación.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué incluye el soporte?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        El soporte incluye asistencia técnica por email y WhatsApp, resolución de problemas, actualizaciones de seguridad, y capacitación según tu plan.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Listo para empezar?</h2>
+            <p>Hablemos con un experto y obtén una recomendación personalizada para tu negocio</p>
+            <a href="https://wa.me/59177457906" class="btn-white">📞 Agendar Consulta Gratuita</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ORAYNX</h3>
+                <p>Crecimiento digital hecho simple para PYMEs en Bolivia.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul class="footer-links">
+                    <li><a href="servicios.html#web">Desarrollo Web</a></li>
+                    <li><a href="servicios.html#landing">Landing Pages</a></li>
+                    <li><a href="servicios.html#automation">Automatizaciones</a></li>
+                    <li><a href="servicios.html#maintenance">Mantenimiento</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul class="footer-links">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="https://wa.me/59177457906">WhatsApp</a></li>
+                    <li><a href="mailto:info@oraynx.com">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 ORAYNX. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/59177457906" class="whatsapp-float" target="_blank">
+        💬
+    </a>
+
+           <!-- JavaScript -->
+    
+    <script>
+          // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+            }
+        });
+        // Billing toggle functionality
+        const toggleBtns = document.querySelectorAll('.toggle-btn');
+        const oneTimeSection = document.getElementById('one-time-pricing');
+        const monthlySection = document.getElementById('monthly-pricing');
+        
+        toggleBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const billingType = this.dataset.billing;
+                
+                // Update active state
+                toggleBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Show/hide appropriate pricing sections
+                if (billingType === 'monthly') {
+                    oneTimeSection.style.display = 'none';
+                    monthlySection.style.display = 'block';
+                } else {
+                    oneTimeSection.style.display = 'block';
+                    monthlySection.style.style.display = 'none';
+                }
+            });
+        });
+
+        // FAQ accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const isActive = this.classList.contains('active');
+                
+                // Close all items
+                faqItems.forEach(faqItem => faqItem.classList.remove('active'));
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for CTA buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
