@@ -22,6 +22,17 @@
     <header>
         <nav>
             <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="25" y1="10" x2="10" y2="40" stroke="#00C0D9" stroke-width="3" opacity="0.6"/>
+                        <line x1="10" y1="40" x2="40" y2="40" stroke="#00C0D9" stroke-width="3" opacity="0.6"/>
+                        <line x1="40" y1="40" x2="25" y2="10" stroke="#34D399" stroke-width="3" opacity="0.6"/>
+                        <circle cx="25" cy="10" r="4" fill="#00C0D9"/>
+                        <circle cx="10" cy="40" r="4" fill="#00C0D9"/>
+                        <circle cx="40" cy="40" r="4" fill="#34D399"/>
+                        <circle cx="25" cy="30" r="3" fill="#34D399" opacity="0.8"/>
+                    </svg>
+                </div>
                 <div class="logo-text">
                     <span class="logo-ora">ORA</span><span class="logo-y">Y</span><span class="logo-nx">NX</span>
                 </div>
@@ -166,6 +177,23 @@
     <a href="https://wa.me/59100000000" class="whatsapp-float">💬</a>
 
     <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = '0 4px 10px rgba(0,0,0,0.1)';
+            }
+        });
         // Auto-redirect after 10 seconds (optional)
         setTimeout(() => {
             const userResponse = confirm('¿Te gustaría ser redirigido a la página principal mientras esperas nuestra respuesta?');
